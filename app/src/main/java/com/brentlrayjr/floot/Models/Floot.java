@@ -2,10 +2,7 @@ package com.brentlrayjr.floot.Models;
 
 import java.util.Random;
 
-/**
- * Created by blray on 11/23/2015.
- */
-public class Post<T> {
+public class Floot<T> {
 
     T content;
     int upVotes;
@@ -13,15 +10,14 @@ public class Post<T> {
     int length;
 
 
-
-    public Post() {
+    public Floot() {
 
         content = null;
         length=generateLength();
 
     }
 
-    public Post(T content){
+    public Floot(T content) {
 
         this.content = content;
         this.length = generateLength();

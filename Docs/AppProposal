@@ -1,0 +1,109 @@
+App:
+
+1.) Name: Floot
+
+2.)Concept: Timed posts
+
+3.) Target group: College students
+
+4.) Target platforms:
+	a.)iOS
+		>
+	b.)Android
+		>
+	c.)Web
+		> View Only
+
+Clients: End users, bots
+
+
+Search parameters: Location, school
+
+Posts: 
+
+1.) Content: 
+	a.) Text
+	b.)	Video
+	c.) Voice
+
+2.) Max Post time:
+	a.)Client: 45 seconds
+	b.)Server:
+		> 24 hours + 24 hours per 100 upvotes
+
+		
+3.) Min Post time:
+	a.)Client: 5-7 seconds
+		> Variable
+	b.)Server:
+		> 24 hours
+		> Downvote <=0
+		
+4.) Actions:
+	a.)Upvote
+		> Increase client post time by 2
+	b.)Downvote
+	
+	c.)Dismiss
+		>Move post to recycler
+		
+	d.) Comment
+		>Reply to post
+			>Poster may opt to initiate private conversation
+
+Messaging:
+
+1.)Message delete from server and client 
+
+2.) Max messages shown: 2
+	a.)Sender messages
+		> Deletes on thread exit
+	b.)Receiver response
+		> Deletes on thread exit
+		
+3.) Thread has no user identifiers
+
+Users:
+
+1.) Users  below 20% upvote:downvote ratio restrict downvote
+
+2.) "Shadow Mode"
+	a.)Semi-ban
+		>Duration: until account review
+	b.)Read only
+		>Can view
+		>Cannot post, reply to posts, upvote, downvote
+		
+3.) Profile:
+	a.) Access
+		>Hidden by default
+		>Grant individual access
+	c.) Photo
+	d.)	School
+	e.)	Major
+	f.) Name
+	g.) Age
+	h.) Bio
+	i.) Twitter
+	
+Answers:
+
+1.) Content:
+	a.)Questions
+	b.)Answers
+	
+2.) Actions:
+	a.)upvote
+	b.)downvote
+
+
+	
+
+
+
+
+
+
+
+
+

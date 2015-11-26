@@ -2,7 +2,7 @@ App:
 
 1.) Name: Floot
 
-2.)Concept: Timed posts
+2.)Concept: Timed floots
 
 3.) Target group: College students
 
@@ -72,7 +72,7 @@ Users:
 		>Duration: until account review
 	b.)Read only
 		>Can view
-		>Cannot post, reply to posts, upvote, downvote
+		>Cannot post, reply to floots, upvote, downvote
 		
 3.) Profile:
 	a.) Access

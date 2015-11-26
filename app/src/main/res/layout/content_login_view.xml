@@ -27,9 +27,33 @@
 
         >
 
+        <TextView
+            android:id="@+id/login_instructions_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please sign in to access your college's floots" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="student@college.edu"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:visibility="gone" />
+
+        </android.support.design.widget.TextInputLayout>
+
 
         <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
 
             <AutoCompleteTextView android:id="@+id/identity" android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:hint="Identity"
@@ -50,23 +74,26 @@
 
         </android.support.design.widget.TextInputLayout>
 
-        <TextView
-            android:text="New to Floot? Register your .edu below."
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="80dp"
-            android:layout_marginBottom="20dp"/>
+            android:layout_marginTop="80dp">
 
-        <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp">
+            <TextView
+                android:text="New to Floot?"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
 
-            <AutoCompleteTextView android:id="@+id/email" android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:hint="name@college.edu"
-                android:inputType="textEmailAddress" android:maxLines="1"
-                android:singleLine="true" />
+                android:layout_marginBottom="20dp" />
 
-        </android.support.design.widget.TextInputLayout>
+            <Button
+                android:id="@+id/register_button_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                style="?attr/borderlessButtonStyle" />
+
+        </LinearLayout>
 
 
     </LinearLayout>

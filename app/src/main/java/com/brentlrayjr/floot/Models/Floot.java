@@ -1,5 +1,6 @@
 package com.brentlrayjr.floot.Models;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 public class Floot<T> {
@@ -8,12 +9,14 @@ public class Floot<T> {
     int upVotes;
     int downVotes;
     int length;
+    ArrayList<Reply> replies;
 
 
     public Floot() {
 
         content = null;
         length=generateLength();
+        replies = null;
 
     }
 
@@ -21,6 +24,7 @@ public class Floot<T> {
 
         this.content = content;
         this.length = generateLength();
+        replies = new ArrayList<>();
 
     }
 

@@ -23,22 +23,22 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:gravity="center"
-
-
         >
 
         <TextView
             android:id="@+id/login_instructions_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Please sign in to access your college's floots" />
+            android:text="Please sign in to access your college's floots"
+
+            />
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp">
 
-            <AutoCompleteTextView
+            <EditText
                 android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -51,24 +51,50 @@
         </android.support.design.widget.TextInputLayout>
 
 
-        <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+        <android.support.design.widget.TextInputLayout
+
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp">
 
-            <AutoCompleteTextView android:id="@+id/identity" android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:hint="Identity"
+            <AutoCompleteTextView
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
                 android:inputType="text" android:maxLines="1"
                 android:singleLine="true" />
 
         </android.support.design.widget.TextInputLayout>
 
 
+        <LinearLayout
+            android:id="@+id/register_checkboxes_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <CheckBox
+                android:id="@+id/use_college_username_checkbox"
+                android:text="Use college username."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/randomize_username_checkbox"
+                android:text="Randomize username."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
 
         <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <EditText android:id="@+id/password" android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:hint="password"
+                android:layout_height="wrap_content"
+                android:hint="********"
                 android:inputType="textPassword"
                 android:maxLines="1" android:singleLine="true" />
 
